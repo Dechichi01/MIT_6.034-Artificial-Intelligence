@@ -799,12 +799,12 @@ def is_admissible_4_getargs():
     return [ NEWGRAPH1, "D" ]
 
 def is_admissible_4_testanswer(val, original_val = None):
-    return False == bool(val)
+    return True == bool(val)
 
 make_test(type='FUNCTION',
           getargs = is_admissible_4_getargs,
           testanswer = is_admissible_4_testanswer,
-          expected_val = 'False for NEWGRAPH1/D',
+          expected_val = 'True for NEWGRAPH1/D',
           name = 'is_admissible')
 
 
